@@ -14,7 +14,8 @@ const savedUserName = localStorage.getItem(USERNAME_KEY);
 function paintGreeting(username){
 	loginPage.style.display = "none";
 	mainPage.style.display = "flex";
-	mainPage.style.backgroundImage = `url('img/main_img.jpg')`;
+	const backgroundTarget = Math.floor(Math.random()*2) + 1;
+	mainPage.style.backgroundImage = `url('img/main_img${backgroundTarget}.jpg')`;
 	todoContainer.style.hieght = "0px";
 }	
 
