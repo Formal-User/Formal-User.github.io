@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/lib.js"></script>
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/background.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/icons.js"></script>
+    <script defer src="js/calender.js"></script>
+    <title>
+      learn javascript
+    </title>
+  </head>
+  <body>
+    <div id="login-page">
+      <div id="login-form"> 
+        <div id="login-icon"></div>
+        <p style="margin-bottom:10px;">Well come to my Momentum app</p>
+        <form id="login-input">
+          <input requiredbmaxlength="15" type="text" placeholder="write your name">
+          <input id="login-enter" type = "submit" value="">
+        </form>
+      </div>
+      <div id="login-clock">
+        <div class = "clock">
+          <div>12:00:00</div>
+          <div>05/09 MON</div>
+        </div>
+      </div>
+    </div>
+    <div id="main-page">
+      <div id="todo-container" class="hidden">
+      </div>
+      <div id="weather-container">
+        <div></div>
+      </div>
+      <div id="app-container">
+        <div id="youtube" class="icons">
+          <img />
+        </div>
+        <div id="calender-icon" class="icons">
+          <img />
+        </div>
+      </div>
+      <div id="manu-bar">
+        <div id="logout" title="logout"><img src="icon/power_off.png"></div>
+        <div>
+          <form id="todo-input">
+            <input type="text" placeholder="    Write what to do" required>
+          </form>
+        </div>
+        <div id="weather-box">
+          <div class="weather-icon">
+            <img />
+          </div>
+          <div class="weather-info">
+          </div>
+        </div>
+        <div id="main-clock" title="">
+          <div class = "clock">
+            <div>12:00:00</div>
+            <div>0000-00-00</div>
+          </div>
+        </div>
+      </div>
+      <div id="calender" class="hidden">
+        <div class="close-box">
+          <div class="close"><img></div>
+        </div>
+        <div class="sec_cal">
+          <div class="cal_nav">
+            <a href="javascript:;" class="nav-btn go-prev">prev</a>
+            <div class="year-month"></div>
+            <a href="javascript:;" class="nav-btn go-next">next</a>
+          </div>
+          <div class="cal_wrap">
+            <div class="days">
+              <div class="day">MON</div>
+              <div class="day">TUE</div>
+              <div class="day">WED</div>
+              <div class="day">THU</div>
+              <div class="day">FRI</div>
+              <div class="day">SAT</div>
+              <div class="day">SUN</div>
+            </div>
+            <div class="dates"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
